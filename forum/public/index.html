@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./axios.js"></script>
+  <script src="./jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+  <title>论坛</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <h1 class="brand">JavaWeb作业</h1>
+      <div class="serach">
+        <input type="text">
+      </div>
+      <div class="userLogin">
+        <a href="javascript:void(0)" id="login_click" onclick="btnLogin()">登录</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="top-content">
+        <ol>
+          <li class="liOn">技术</li>
+          <li>新闻</li>
+          <li>趣事</li>
+          <li><a href="javascript:void(0)" class="fatie">发帖</a></li>
+        </ol>
+      </div>
+      <div class="mid-content">
+      </div>
+    </div>
+    <div class="footer">底部</div>
+    <div class="box_lg">
+      <div class="box_tit">
+        <a class="close" href="#">×</a>
+        <h3 class="LoginView">登录账号</h3>
+        <h3 class="regView">注册账号</h3>
+      </div>
+      <div class="box_cont">
+        <form class="box_frm LoginView" id="denglu">
+          <ol>
+            <li><input type="text" class="iptUid" placeholder="帐号" id="iptUid" /></li>
+            <li><input type="pwd" class="iptName" placeholder="密码" id="iptName" /></li>
+            <li><input type="button" value="登录" class="btn btn-primary btn_frm" id="login_btn"></li>
+          </ol>
+        </form>
+        <form class="box_frm regView" id="zhuce">
+            <ol>
+              <li><input type="text" class="iptUid" placeholder="帐号" id="riptUid" /></li>
+              <li><input type="pwd" class="iptName" placeholder="密码" id="riptName" /></li>
+              <li><input type="button" value="注册" class="btn btn-primary btn_frm" id="reg_btn"></li>
+            </ol>
+          </form>
+      </div>
+      <div class="box_ft">
+        <input type="checkbox" style="margin-right: 8px" class="LoginView"><label class="LoginView">下次自动登录</label>
+        <a href="javascript:void(0)" id="lijizhuce" class="LoginView">立即注册</a>
+      </div>
+    </div>
+    <div class="box_bg"></div>
+    <div class="box_post">
+      <a href="#" class="close_boxPost">×</a>
+      <form class="fabiao_post">
+        <ol>
+          <li><input type="text" class="ipt_post" placeholder="请输入标题" id="ipt_post" /></li>
+          <li><textarea class="post_neirong" cols="30" rows="10" placeholder="请输入内容" style="margin-top:10px;"></textarea></li>
+          <li><input type="button" value="发表" class="btn_publishPost"></li>
+        </ol>
+      </form>
+    </div>
+    <div class="box_comment">
+      <a href="#" class="close_boxComment">×</a>
+      <form class="fabiao_comment">
+        <ol>
+          <li>输入评论内容：</li>
+          <li><textarea class="comment_neirong" cols="30" rows="10" placeholder="请输入评论内容" style="margin-top:10px;"></textarea></li>
+          <li><input type="button" value="发表" class="btn_publishComment"></li>
+        </ol>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

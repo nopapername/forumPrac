@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,ul{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+input,label{
+  vertical-align: middle;
+}
+.page {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  min-height: 600px;
+}
+.userLogin {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.tuichudenglu {
+  width: auto;
+  background-color: rgb(0, 182, 228);
+  border-radius: 5px;
+  padding: 3px 5px;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.top-content {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+}
+.top-content ol {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.top-content ol .liOn {
+  background-color: black;
+  color: white;
+  padding: 0 5px;
+}
+.mid-content {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+.post-container {
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgb(224, 224, 224);
+}
+.post-comment {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.comment-title {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: rebeccapurple;
+}
+.box_lg {
+  width: 200px;
+  height: 150px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  background-color: rgb(209, 209, 209);
+  z-index: 10;
+  display: none;
+}
+.regView {
+  display: none;
+}
+.box_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.349);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+.box_post {
+  width: 300px;
+  height: 250px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  background-color: rgb(209, 209, 209);
+  z-index: 10;
+  text-align: center;
+  display: none;
+}
+.close_boxPost {
+  position: relative;
+  left: -140px;
+}
+.box_comment {
+  width: 300px;
+  height: 250px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  background-color: rgb(209, 209, 209);
+  z-index: 10;
+  text-align: center;
+  display: none;
+}
+.close_boxComment {
+  position: relative;
+  left: -140px;
+}
