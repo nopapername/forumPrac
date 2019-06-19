@@ -12,8 +12,9 @@ nodejs+express+mysql实现后台，前端页面只用了基础的html+css+jq+axi
 ### 运行步骤
 - （需要官网下载安装nodejs环境并安装npm包管理工具）
 - 程序运行步骤：
-- 1、将forumData.sql导入数据库
+- 1、将forumData.sql导入自己的数据库
 - 2、开启数据库端口服务
 - 3、进入forum文件夹下 开启终端输入 npm install 安装依赖包
-- 4、 输入 npm start 运行
-- 5、浏览器输入localhost:3000访问页面
+- 4、在进入db文件夹下的DBConfig.js文件修改为自己的数据库的帐号密码及端口
+- 5、输入 npm start 运行
+- 6、浏览器输入localhost:3000访问页面
